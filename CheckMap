@@ -6,7 +6,7 @@ end)
 warn("Anti-Afk has Loaded")
 
 local timer = "0.1"
-local ingame = "loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeCatexe/ray-s-mod/main/ray's%20mod", true))()"
+local ingame = "https://raw.githubusercontent.com/ilikeCatexe/ray-s-mod/main/ray's%20mod"
 local g1 = "https://raw.githubusercontent.com/ilikeCatexe/ray-s-mod/main/Not%20Support"
 local g2 = ""
 
@@ -14,13 +14,13 @@ local gameid = game.PlaceId
 
 print("GameId is", gameid)
 loadstring(game:HttpGet(ingame, true))() -- Game
-wait(0.1)
+wait(0)
 if game.PlaceId == 4967465336 then
  game.CoreGui["Library"]:Destroy()
- wait(0.1)
+ wait(0)
 	loadstring(game:HttpGet(g1, true))() -- Lobby
  elseif game.PlaceId == 2413927524 then
  game.CoreGui["Library"]:Destroy()
- wait(0.1)
+ wait(0)
 	loadstring(game:HttpGet(g2, true))() -- Zombie Mode
 end
