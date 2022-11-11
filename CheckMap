@@ -1,0 +1,26 @@
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
+warn("Anti-Afk has Loaded")
+
+local timer = "0.1"
+local ingame = "loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeCatexe/ray-s-mod/main/ray's%20mod", true))()"
+local g1 = "https://raw.githubusercontent.com/ilikeCatexe/ray-s-mod/main/Not%20Support"
+local g2 = ""
+
+local gameid = game.PlaceId
+
+print("GameId is", gameid)
+loadstring(game:HttpGet(ingame, true))() -- Game
+wait(0.1)
+if game.PlaceId == 4967465336 then
+ game.CoreGui["Library"]:Destroy()
+ wait(0.1)
+	loadstring(game:HttpGet(g1, true))() -- Lobby
+ elseif game.PlaceId == 2413927524 then
+ game.CoreGui["Library"]:Destroy()
+ wait(0.1)
+	loadstring(game:HttpGet(g2, true))() -- Zombie Mode
+end
